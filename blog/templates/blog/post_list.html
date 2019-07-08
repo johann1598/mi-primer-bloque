@@ -1,24 +1,32 @@
 <html>
     <head>
         <title>Django blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     </head>
     <body>
-        <div>
-            <h1><a href="/">Django  Blog</a></h1>
+       <form method="POST" oninput="resultado.value=parseInt(valor1.value)+parseInt(valor2.value)">
+    <input type="number" id="valor1" value="0"> +
+    <input type="number" id="valor2" value="0"> =
+    <output name="resultado" for="valor1 valor2"></output>
+	</form>
 
-        </div>
-       
+       <form method="POST" oninput="resultado.value=parseInt(valor3.value)-parseInt(valor4.value)">
+    <input type="number" id="valor3" value="0"> -
+    <input type="number" id="valor4" value="0"> =
+    <output name="resultado" for="valor3 valor4"></output>
+    </form>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+         <form method="POST" oninput="resultado.value=parseInt(valor5.value)*parseInt(valor6.value)">
+    <input type="number" id="valor5" value="0"> *
+    <input type="number" id="valor6" value="0"> =
+    <output name="resultado" for="valor5 valor6"></output>
+    </form>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+         <form method="POST" oninput="resultado.value=parseInt(valor7.value)/parseInt(valor8.value)">
+    <input type="number" id="valor7" value="0"> /
+    <input type="number" id="valor8" value="0"> =
+    <output name="resultado" for="valor7 valor8"></output>
+	</form>
     </body>
 </html>
